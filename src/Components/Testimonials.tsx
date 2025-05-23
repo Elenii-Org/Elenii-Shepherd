@@ -6,7 +6,7 @@ export default function Testimonials() {
     <section className="py-10 px-4 bg-[#AAC9DD] text-center">
       <header className="mb-8">
         <h2 className="text-3xl font-bold text-[#2A77AA]">Testimonials</h2>
-        <h3 className="text-xl mt-2 text-gray-700">
+        <h3 className="font-bold text-2xl mt-2 text-[#00121f]">
           We’ve built trust with reviews from individuals all around the world
         </h3>
         <p className="text-gray-600 mt-4 max-w-xl mx-auto">
@@ -15,7 +15,7 @@ export default function Testimonials() {
       </header>
 
       <article className="max-w-xl mx-auto">
-        <p className="text-lg italic text-gray-800 mb-6">
+        <p className="text-lg mb-6">
           "Living with low vision made simple tasks frustrating. But with this app, I feel like I've gained my independence back.
           I can read signs, navigate new places, and even shop online by myself. Thank you!"
         </p>

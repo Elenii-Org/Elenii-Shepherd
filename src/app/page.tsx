@@ -4,6 +4,7 @@ import LandingPage from "@/Components/LandingPage";
 import Techstars from "@/Components/Techstars";
 import HowItWork from "@/Components/HowItWork";
 import Testimonials from "@/Components/Testimonials";
+import Footer from "@/Components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Techstars />
       <HowItWork />
       <Testimonials />
+      <Footer />
     </div>
   );
 }
