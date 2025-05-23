@@ -1,31 +1,55 @@
-import React from 'react'
+import React from "react";
 
 export default function HowItWork() {
   return (
-    <div className='bg-[#80aecc]'>
-      <div className=''>
-        <h1 className='text-2xl text-[#2A77AA]'>How it works</h1>
-        <h2 className='text-2xl font-bold text-[#00121f]'>Get Started in Minutes</h2>
-        <p>Just three simple steps to start experiencing the world independently</p>
-        <button className='bg-[#2A77AA] px-6 py-3 text-2xl font-bold rounded-full text-[#00121f] flex'>Get started</button>
+    <section className="bg-[#80aecc] py-12 px-4">
+      <div className="max-w-4xl mx-auto mb-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
+        <div>
+          <h1 className="text-xl text-[#2A77AA]">How it works</h1>
+          <h2 className="text-3xl font-bold text-[#00121f] mt-2">
+            Get Started in Minutes
+          </h2>
+          <p className="mt-4 text-[#00121f]">
+            Just three simple steps to start experiencing the world
+            independently
+          </p>
+        </div>
+        <button className="bg-[#2A77AA] px-6 py-3 text-lg font-bold rounded-full text-[#00121f] whitespace-nowrap">
+          Get started
+        </button>
       </div>
-      <div className='bg-[#ccdeeb] shadow-2xl'>
-        <div>
-        <h1>01</h1>
-        <h2>Download Elenii Shepherd app</h2>
-        <p>Get it free from the Google Play Store or Apple App Store.</p>
-        </div>
-        <div>
-            <h1>02</h1>
-            <h2>Create your profile</h2>
-            <p>Personalize the experience to suit your needs and level of vision.</p>
-        </div>
-        <div>
-        <h1>03</h1>
-        <h2>Start navigating with ease</h2>
-        <p>Voice, touch, and vibration help you move, read, and connect—independently.</p>
-        </div>
-      </div>
+
+      <div className="bg-[#ccdeeb] shadow-2xl rounded-lg p-8 max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+  {[
+    {
+      step: "01",
+      title: "Download Elenii Shepherd app",
+      desc: "Get it free from the Google Play Store or Apple App Store.",
+    },
+    {
+      step: "02",
+      title: "Create your profile",
+      desc: "Personalize the experience to suit your needs and level of vision.",
+    },
+    {
+      step: "03",
+      title: "Start navigating with ease",
+      desc: "Voice, touch, and vibration help you move, read, and connect—independently.",
+    },
+  ].map(({ step, title, desc }, index, arr) => (
+    <div
+      key={step}
+      className={`text-center px-4 ${
+        index !== arr.length - 1 ? 'border-r border-gray-300' : ''
+      }`}
+    >
+      <h1 className="text-4xl font-bold text-gray-400">{step}</h1>
+      <h2 className="text-xl font-semibold text-[#00121f] mt-2">{title}</h2>
+      <p className="mt-2 text-[#00121f]">{desc}</p>
     </div>
-  )
+  ))}
+</div>
+
+    </section>
+  );
 }
