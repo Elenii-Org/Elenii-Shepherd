@@ -1,4 +1,5 @@
-import React from "react";
+
+import Image from "next/image";
 
 export default function HowItWork() {
   return (
@@ -19,7 +20,7 @@ export default function HowItWork() {
         </button>
       </div>
 
-      <div className="bg-[#ccdeeb] shadow-2xl rounded-lg p-8 max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+    <div className="bg-[#ccdeeb] shadow-2xl rounded-lg p-8 max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
   {[
     {
       step: "01",
@@ -36,12 +37,10 @@ export default function HowItWork() {
       title: "Start navigating with ease",
       desc: "Voice, touch, and vibration help you move, read, and connect—independently.",
     },
-  ].map(({ step, title, desc }, index, arr) => (
+  ].map(({ step, title, desc }) => (
     <div
       key={step}
-      className={`text-center px-4 ${
-        index !== arr.length - 1 ? 'border-r border-gray-300' : ''
-      }`}
+      className="text-center px-4 border-r border-gray-400"
     >
       <h1 className="text-4xl font-bold text-gray-400">{step}</h1>
       <h2 className="text-xl font-semibold text-[#00121f] mt-2">{title}</h2>
@@ -49,6 +48,19 @@ export default function HowItWork() {
     </div>
   ))}
 </div>
+    <section className="bg-[#80aecc] py-12 px-4">
+      {/* Video styled like the image */}
+      <div className="max-w-5xl mx-auto px-4 py-8">
+        <video
+          className="w-full h-auto rounded-lg shadow-md py-2 "
+          controls
+          poster="/image.jpg" // this shows the image before video plays
+        >
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
 
     </section>
   );
