@@ -3,6 +3,7 @@ import Navbar from "@/Components/Navbar";
 import LandingPage from "@/Components/LandingPage";
 import Techstars from "@/Components/Techstars";
 import HowItWork from "@/Components/HowItWork";
+import Testimonials from "@/Components/Testimonials";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <LandingPage /> 
       <Techstars />
       <HowItWork />
+      <Testimonials />
     </div>
   );
 }
