@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#ccdeeb]  text-white px-6 py-10">
+    <footer className="bg-[#ccdeeb] text-white px-6 py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
         {/* About Section */}
         <div className="col-span-2">
@@ -55,7 +55,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
+      <div className="mt-10 pt-4 text-center text-sm text-gray-400">
         &copy; 2025 festcreates, Inc. All rights reserved.
       </div>
     </footer>
