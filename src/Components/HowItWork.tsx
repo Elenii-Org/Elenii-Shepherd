@@ -37,14 +37,29 @@ export default function HowItWork() {
         </button>
       </div>
 
-      <div className="bg-[#ccdeeb] shadow-2xl rounded-lg p-8 max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
-        {steps.map(({ step, title, desc }) => (
-          <div key={step} className="px-4 border-r border-gray-400 last:border-r-0">
-            <h1 className="text-4xl font-bold text-gray-400">{step}</h1>
-            <h2 className="text-xl font-semibold text-[#00121f] mt-2">{title}</h2>
-            <p className="mt-2 text-[#00121f]">{desc}</p>
-          </div>
-        ))}
+      {/* Steps + QR Code section */}
+      <div className="bg-[#ccdeeb] shadow-2xl rounded-lg p-8 max-w-6xl mx-auto grid md:grid-cols-4 gap-8 items-start">
+        {/* Steps */}
+        <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {steps.map(({ step, title, desc }) => (
+            <div key={step} className="px-4 border-r border-gray-400 last:border-r-0">
+              <h1 className="text-4xl font-bold text-gray-400">{step}</h1>
+              <h2 className="text-xl font-semibold text-[#00121f] mt-2">{title}</h2>
+              <p className="mt-2 text-[#00121f]">{desc}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* QR Code */}
+        <div className="flex justify-center md:justify-end">
+          <Image
+            src="/QRcode.png" // Replace with your QR code image path
+            alt="Download QR Code"
+            width={200}
+            height={200}
+            className="rounded-md shadow-md"
+          />
+        </div>
       </div>
 
       {/* Video section */}

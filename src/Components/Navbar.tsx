@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function Navbar() {
       <ul className="top-48 hidden md:flex space-x-6 text-[#00121f] font-medium">
         <li className="hover:text-blue-600 cursor-pointer">Features</li>
         <li className="hover:text-blue-600 cursor-pointer">How it Works</li>
-        <li className="hover:text-blue-600 cursor-pointer">About</li>
+        <Link href="/about"><li className="hover:text-blue-600 cursor-pointer">About</li></Link>
       </ul>
 
       {/* Contact Button (Desktop) */}
