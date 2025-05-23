@@ -55,7 +55,7 @@ export default function Techstars() {
             style={{ backgroundColor: feature.bgColor }}
             className="rounded-2xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300 relative"
           >
-            <GoArrowUpRight className="absolute top-4 left-4 text-[#00121f] text-2xl border border-[#f0f0f0] shadow-2xl rounded-xl p-1 bg-white" />
+            <GoArrowUpRight className="absolute top-4 left-4 text-[#00121f] text-2xl border border-[#f0f0f0] shadow-2xl rounded-md p-1 bg-white" />
             <h2 className="text-xl font-semibold text-[#00121f] mt-10">{feature.title}</h2>
             <p className="text-[#00121f] mt-2">{feature.description}</p>
           </div>

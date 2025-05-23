@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "@/Components/Navbar"; 
 import LandingPage from "@/Components/LandingPage";
 import Techstars from "@/Components/Techstars";
+import HowItWork from "@/Components/HowItWork";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar /> 
       <LandingPage /> 
       <Techstars />
+      <HowItWork />
     </div>
   );
 }
