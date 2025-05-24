@@ -61,18 +61,6 @@ export default function HowItWork() {
           />
         </div>
       </div>
-
-      {/* Video section */}
-      <div className="max-w-5xl mx-auto px-4 py-8">
-        <video
-          className="w-full h-auto rounded-lg shadow-md py-2"
-          controls
-          poster="/image.jpg"
-        >
-          <source src="/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
     </section>
   );
 }

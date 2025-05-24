@@ -1,37 +1,34 @@
-
 import Image from "next/image";
 
 export default function Testimonials() {
   return (
     <section className="py-10 px-4 bg-[#AAC9DD] text-center">
-      <header className="mb-8">
-        <h2 className="text-3xl font-bold text-[#2A77AA]">Testimonials</h2>
-        <h3 className="font-bold text-2xl mt-2 text-[#00121f]">
-          We’ve built trust with reviews from individuals all around the world
-        </h3>
-        <p className="text-gray-600 mt-4 max-w-xl mx-auto">
-          Real experiences from people whose lives have been changed through improved accessibility.
-        </p>
+      <header className="max-w-4xl mx-auto mb-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
+        <div>
+          <h2 className="text-3xl font-bold text-[#2A77AA]">Testimonials</h2>
+          <h3 className="font-bold text-2xl mt-2 text-[#00121f]">
+            We’ve built trust with reviews from <br /> individuals all around the world
+          </h3>
+          <p className="text-gray-600 mt-4 max-w-xl mx-auto md:mt-0">
+            Real experiences from people whose lives have been changed through improved accessibility.
+          </p>
+        </div>
       </header>
 
-      <article className="max-w-xl mx-auto">
-        <p className="text-lg mb-6">
-          "Living with low vision made simple tasks frustrating. But with this app, I feel like I've gained my independence back.
-          I can read signs, navigate new places, and even shop online by myself. Thank you!"
-        </p>
-
-        <figure className="flex items-center gap-4">
-          <img
-            src="/sienna.png"
-            alt="Photo of Alex Alexander"
-            className="w-16 h-16 rounded-full object-cover"
-          />
-          <figcaption className="text-left">
-            <p className="font-semibold text-gray-900">Alex Alexander</p>
-            <p className="text-sm text-gray-600">Student at Oxford University</p>
-          </figcaption>
-        </figure>
-      </article>
+      <figure className="relative max-w-5xl mx-auto px-4 py-8">
+        {/* Responsive video container */}
+        <div className="relative w-full pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-md">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            controls
+            poster="/image.jpg"
+            aria-label="Testimonial video showing user stories about accessibility"
+          >
+            <source src="/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </figure>
     </section>
   );
 }
