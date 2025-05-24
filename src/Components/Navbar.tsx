@@ -8,13 +8,13 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#80AECC] shadow-md px-4 py-2 flex items-center justify-between relative">
+    <nav className="bg-[#80AECC] px-4 py-2 flex items-center justify-between relative">
       {/* Logo and Brand Name */}
       <div className="flex items-center">
         <Image
           src="/logofram.png"
           alt="Logo"
-          width={50}
+          width={80}
           height={50}
           className="object-contain m-0 p-0"
         />
