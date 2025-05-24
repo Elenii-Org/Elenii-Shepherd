@@ -2,6 +2,8 @@ import Image from "next/image";
 import { RiVoiceprintFill } from "react-icons/ri";
 import { LuNewspaper } from "react-icons/lu";
 import { IoIosRadio } from "react-icons/io";
+import { MdOutlineSmartScreen } from "react-icons/md";
+import { PiCalculatorThin } from "react-icons/pi";
 
 const features = [
   {
@@ -14,25 +16,25 @@ const features = [
     title: "Screen Reader Integration",
     description: "Works seamlessly with screen readers and voice control systems.",
     bgColor: "#5592bb",
-    icon: null,
+    icon: PiCalculatorThin,
   },
   {
     title: "Offline Smart Map",
     description: "Navigate confidently—even without internet access.",
     bgColor: "#aac9dd",
+    icon: MdOutlineSmartScreen,
+  },
+  {
+    title: "Radio",
+    description: "Your data stays protected with built-in privacy and encryption.",
+    bgColor: "#aac9dd",
     icon: IoIosRadio,
   },
   {
     title: "News & Blog",
-    description: "Your data stays protected with built-in privacy and encryption.",
-    bgColor: "#aac9dd",
-    icon: LuNewspaper,
-  },
-  {
-    title: "Real-Time Updates",
     description: "Stay updated with automatic alerts and changes in real-time.",
     bgColor: "#5592bb",
-    icon: RiVoiceprintFill,
+    icon: LuNewspaper,
   },
 ];
 
