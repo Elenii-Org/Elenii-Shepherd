@@ -38,10 +38,10 @@ export default function AboutPage() {
               Driven by empathy. Built with purpose. Designed for independence. Join a
               growing community committed to redefining accessibility and digital freedom.
             </p>
-          </div>
           <button className="bg-[#2A77AA] text-white px-6 py-3 w-full rounded-full font-semibold hover:bg-[#195b86] transition">
             Contact us
           </button>
+          </div>
         </div>
       </div>
     </section>

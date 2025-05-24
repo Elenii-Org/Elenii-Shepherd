@@ -37,9 +37,9 @@ export default function Navbar() {
 
       {/* Contact Button (Desktop) */}
       <div className="hidden md:block">
-        <button className="bg-[#2A77AA] text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 text-sm">
+        <Link href="/contact"><button className="bg-[#2A77AA] text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 text-sm">
           Contact Us
-        </button>
+        </button></Link>
       </div>
 
       {/* Mobile Menu */}
