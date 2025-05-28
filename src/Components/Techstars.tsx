@@ -39,9 +39,6 @@ const features = [
 ];
 
 export default function Techstars() {
-  const topRow = features.slice(0, 3);
-  const bottomRow = features.slice(3);
-
   const renderCard = (feature, key, width = "w-full sm:w-[300px] lg:w-[320px]") => {
     const Icon = feature.icon;
     return (
@@ -65,16 +62,14 @@ export default function Techstars() {
     <div className="bg-[#ccdeeb] text-[#00121f] py-10 px-4">
       {/* Logos */}
       <div className="flex items-center justify-center flex-wrap gap-6">
-        {Array(4)
-          .fill(null)
-          .map((_, index) => (
-            <div key={index} className="flex items-center space-x-2">
-              <p className="text-xl">
-                techstars <span className="text-3xl text-green-300">_</span>
-              </p>
-              <Image src="/logo.png" alt="Techstars Logo" width={120} height={120} />
-            </div>
-          ))}
+        {[...Array(4)].map((_, i) => (
+          <div key={i} className="flex items-center space-x-2">
+            <p className="text-xl">
+              techstars <span className="text-3xl text-green-300">_</span>
+            </p>
+            <Image src="/logo.png" alt="Techstars Logo" width={120} height={120} />
+          </div>
+        ))}
       </div>
 
       {/* Section Title */}
@@ -87,17 +82,16 @@ export default function Techstars() {
       {/* Features Grid */}
       <div className="mt-10 max-w-7xl mx-auto space-y-8 px-4">
         {/* Top Row */}
-        <div className="flex flex-wrap justify-center gap-6">
-          {topRow.map((feature, idx) =>
-            renderCard(feature, idx)
-          )}
+        <div className="flex flex-wrap justify-center gap-4">
+          {renderCard(features[0], 0)}
+          {renderCard(features[1], 1)}
+          {renderCard(features[2], 2)}
         </div>
 
-        {/* Bottom Row (smaller widths) */}
+        {/* Bottom Row */}
         <div className="flex flex-wrap justify-center gap-6">
-          {bottomRow.map((feature, idx) =>
-            renderCard(feature, idx + topRow.length, "w-full sm:w-[260px] lg:w-[300px]")
-          )}
+          {renderCard(features[3], 3, "w-full sm:w-[260px] lg:w-[500px]")}
+          {renderCard(features[4], 4, "w-full sm:w-[260px] lg:w-[500px]")}
         </div>
       </div>
     </div>
