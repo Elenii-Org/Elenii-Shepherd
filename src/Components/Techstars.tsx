@@ -2,8 +2,7 @@ import Image from "next/image";
 import { RiVoiceprintFill } from "react-icons/ri";
 import { LuNewspaper } from "react-icons/lu";
 import { IoIosRadio } from "react-icons/io";
-import { MdOutlineSmartScreen } from "react-icons/md";
-import { PiCalculatorThin } from "react-icons/pi";
+import { MdOutlineSmartScreen, MdCalculate } from "react-icons/md"; // MdCalculate imported here
 
 const features = [
   {
@@ -16,7 +15,7 @@ const features = [
     title: "Screen Reader Integration",
     description: "Works seamlessly with screen readers and voice control systems.",
     bgColor: "#5592bb",
-    icon: PiCalculatorThin,
+    icon: MdCalculate, // Using MdCalculate correctly
   },
   {
     title: "Offline Smart Map",
