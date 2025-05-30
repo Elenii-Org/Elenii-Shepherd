@@ -77,40 +77,40 @@ export default function LandingPage() {
             </button>
           </div>
 
-          <div className="flex items-center mt-6 justify-center lg:justify-start text-center sm:text-left">
-            <div className="flex -space-x-3">
-              <Image
-                src="/user1.png"
-                alt="User 1"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-white"
-              />
-              <Image
-                src="/user2.png"
-                alt="User 2"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-white"
-              />
-              <Image
-                src="/user3.png"
-                alt="User 3"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-white"
-              />
-            </div>
-            <p className="text-[#00121f] text-xs sm:text-sm font-medium ml-4 sm:ml-6">
-              Trusted by thousands of users worldwide to <br /> improve daily living
-            </p>
-          </div>
+          <div className="flex flex-col sm:flex-row items-center mt-6 justify-center sm:justify-start text-center sm:text-left">
+  <div className="flex -space-x-3 mb-3 sm:mb-0">
+    <Image
+      src="/user1.png"
+      alt="User 1"
+      width={40}
+      height={40}
+      className="rounded-full border-2 border-white"
+    />
+    <Image
+      src="/user2.png"
+      alt="User 2"
+      width={40}
+      height={40}
+      className="rounded-full border-2 border-white"
+    />
+    <Image
+      src="/user3.png"
+      alt="User 3"
+      width={40}
+      height={40}
+      className="rounded-full border-2 border-white"
+    />
+  </div>
+  <p className="text-[#00121f] text-xs sm:text-sm font-medium sm:ml-6">
+    Trusted by thousands of users worldwide to <br /> improve daily living
+  </p>
+</div>
         </div>
 
         {/* Right Side */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
-            src="/heroimage.png"
+            src="/image3.png"
             alt="Hero"
             width={500}
             height={500}
