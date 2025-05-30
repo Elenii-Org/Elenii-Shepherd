@@ -104,7 +104,7 @@ export default function ContactPage() {
 
         {/* QR Code */}
         <div className="flex-shrink-0">
-          <img
+          <Image
             src="/QRcode.png"
             alt="QR code to download Elenii Shepherd app"
             className="max-w-xs w-full"

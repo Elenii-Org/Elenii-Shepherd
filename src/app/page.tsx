@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Navbar from "@/Components/Navbar"; 
 import LandingPage from "@/Components/LandingPage";
 import Techstars from "@/Components/Techstars";

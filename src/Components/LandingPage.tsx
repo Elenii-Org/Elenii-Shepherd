@@ -8,7 +8,7 @@ export default function LandingPage() {
   const [showAccessibilityInfo, setShowAccessibilityInfo] = useState(false);
 
   const handleDownloadClick = () => {
-   
+    // Placeholder for download logic
   };
 
   const handleLearnMoreClick = () => {
@@ -79,20 +79,26 @@ export default function LandingPage() {
 
           <div className="flex items-center mt-6 justify-center lg:justify-start text-center sm:text-left">
             <div className="flex -space-x-3">
-              <img
+              <Image
                 src="/user1.png"
                 alt="User 1"
-                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white"
+                width={40}
+                height={40}
+                className="rounded-full border-2 border-white"
               />
-              <img
+              <Image
                 src="/user2.png"
                 alt="User 2"
-                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white"
+                width={40}
+                height={40}
+                className="rounded-full border-2 border-white"
               />
-              <img
+              <Image
                 src="/user3.png"
                 alt="User 3"
-                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white"
+                width={40}
+                height={40}
+                className="rounded-full border-2 border-white"
               />
             </div>
             <p className="text-[#00121f] text-xs sm:text-sm font-medium ml-4 sm:ml-6">
@@ -103,9 +109,11 @@ export default function LandingPage() {
 
         {/* Right Side */}
         <div className="w-full lg:w-1/2 flex justify-center">
-          <img
+          <Image
             src="/heroimage.png"
             alt="Hero"
+            width={500}
+            height={500}
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full"
           />
         </div>
