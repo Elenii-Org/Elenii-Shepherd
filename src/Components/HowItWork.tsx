@@ -23,21 +23,17 @@ export default function HowItWork() {
     <section className="bg-[#80aecc] py-12 px-4">
       <div className="max-w-4xl mx-auto mb-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
         <div>
-          <h1 className="text-xl text-[#2A77AA]">How it works</h1>
-          <h2 className="text-3xl font-bold text-[#00121f] mt-2">
-            Get Started in Minutes
-          </h2>
-          <p className="mt-4 text-[#00121f]">
-            Just three simple steps to start experiencing the world
-            independently
+          <h1 className="text-xl text-[#2A77AA] font-semibold">How it works</h1>
+          <h2 className="text-3xl font-bold text-[#00121f] mt-2">Get Started in Minutes</h2>
+          <p className="mt-4 text-[#00121f] max-w-md">
+            Just three simple steps to start experiencing the world independently
           </p>
         </div>
-        <button className="bg-[#2A77AA] px-6 py-3 text-lg font-bold rounded-full text-[#00121f] whitespace-nowrap">
+        <button className="bg-[#2A77AA] px-6 py-3 text-lg font-bold rounded-full text-[#00121f] whitespace-nowrap hover:bg-[#195b86] transition">
           Get started
         </button>
       </div>
 
-      {/* Steps + QR Code section */}
       <div className="bg-[#ccdeeb] shadow-2xl rounded-lg p-8 max-w-6xl mx-auto grid md:grid-cols-4 gap-8 items-start">
         {/* Steps */}
         <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -53,7 +49,7 @@ export default function HowItWork() {
         {/* QR Code */}
         <div className="flex justify-center md:justify-end">
           <Image
-            src="/QRcode.png" // Replace with your QR code image path
+            src="/QRcode.png"
             alt="Download QR Code"
             width={200}
             height={200}

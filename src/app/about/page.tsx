@@ -33,14 +33,14 @@ export default function AboutPage() {
               guide, inform, and support users in real-time. From voice-assisted
               navigation and offline maps to smart text readers and object recognition,
               Elenii Shepherd opens up a new realm of possibilities—where vision loss
-              doesn't mean losing access.
+              doesn&apos;t mean losing access.
               <br /><br />
               Driven by empathy. Built with purpose. Designed for independence. Join a
               growing community committed to redefining accessibility and digital freedom.
             </p>
-          <button className="bg-[#2A77AA] text-white px-6 py-3 w-full rounded-full font-semibold hover:bg-[#195b86] transition">
-            Contact us
-          </button>
+            <button className="bg-[#2A77AA] text-white px-6 py-3 w-full rounded-full font-semibold hover:bg-[#195b86] transition">
+              Contact us
+            </button>
           </div>
         </div>
       </div>

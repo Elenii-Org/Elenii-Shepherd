@@ -15,10 +15,18 @@ export default function Footer() {
             real users.
           </p>
           <div className="flex gap-4 text-xl text-[#00121f]">
-            <FaTwitter className="hover:text-blue-400 transition" />
-            <FaFacebookF className="hover:text-blue-600 transition" />
-            <CiInstagram className="hover:text-pink-400 transition" />
-            <FaGithub className="hover:text-gray-400 transition" />
+            <a href="#" aria-label="Twitter">
+              <FaTwitter className="hover:text-blue-400 transition" />
+            </a>
+            <a href="#" aria-label="Facebook">
+              <FaFacebookF className="hover:text-blue-600 transition" />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <CiInstagram className="hover:text-pink-400 transition" />
+            </a>
+            <a href="#" aria-label="GitHub">
+              <FaGithub className="hover:text-gray-400 transition" />
+            </a>
           </div>
         </div>
 
@@ -37,7 +45,7 @@ export default function Footer() {
           <h1 className="font-semibold mb-3 text-[#00121f]">Help</h1>
           <ul className="space-y-2 text-sm text-gray-400">
             <li><a href="#" className="hover:underline">Customer Support</a></li>
-            <li><a href="#" className="hover:underline">Terms & Condition</a></li>
+            <li><a href="#" className="hover:underline">Terms &amp; Condition</a></li>
             <li><a href="#" className="hover:underline">Privacy Policy</a></li>
           </ul>
         </div>
