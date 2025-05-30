@@ -53,7 +53,7 @@ export default function HowItWork() {
             alt="Download QR Code"
             width={200}
             height={200}
-            className="rounded-md shadow-md"
+            className="rounded-md"
           />
         </div>
       </div>
