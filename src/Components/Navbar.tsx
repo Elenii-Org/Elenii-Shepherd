@@ -31,7 +31,7 @@ export default function Navbar() {
         className="md:hidden text-[#00121f] text-3xl focus:outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        {menuOpen ? "×" : "☰"}
+        {menuOpen ? "X" : "☰"}
       </button>
 
       {/* Desktop Links */}

@@ -36,7 +36,7 @@ export default function ContactPage() {
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-2.5 items-stretch min-h-[500px]">
         {/* Left Image */}
         <div className="flex justify-center items-center">
-          <div className="w-full h-full max-w-md relative rounded-lg shadow-md overflow-hidden">
+          <div className="w-full aspect-[4/3] sm:aspect-auto sm:h-full max-w-md relative rounded-lg shadow-md overflow-hidden">
             <Image
               src="/contactimage.jpg"
               alt="Contact illustration"
