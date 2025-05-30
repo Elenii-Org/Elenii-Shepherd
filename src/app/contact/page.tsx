@@ -90,7 +90,7 @@ export default function ContactPage() {
             Download the Elenii Shepherd app
           </h1>
           <p className="mb-4 text-[#00121f] py-3">
-            Scan this QR code to get started instantly. Available on Android &amp; iOS.
+            Available on Android &amp; iOS.
           </p>
           <button
             className="flex items-center gap-3 bg-[#004D80] text-white font-bold px-6 py-3 rounded-full hover:bg-blue-700 transition"
@@ -100,15 +100,6 @@ export default function ContactPage() {
             <FaApple size={30} className="text-[#00121f]" />
             <span className="text-[#00121f] font-bold">Download App</span>
           </button>
-        </div>
-
-        {/* QR Code */}
-        <div className="flex-shrink-0">
-          <Image
-            src="/QRcode.png"
-            alt="QR code to download Elenii Shepherd app"
-            className="max-w-xs w-full"
-          />
         </div>
       </div>
     </section>

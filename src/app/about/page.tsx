@@ -1,24 +1,62 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <section className="bg-[#ccdeeb] py-12 px-4">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-stretch">
-        {/* Left: Image */}
-        <div className="relative h-[500px] w-full rounded-lg shadow-lg overflow-hidden">
-          <Image
-            src="/aboutimage.jpg"
-            alt="People using Elenii Shepherd app"
-            fill
-            className="object-cover"
-            priority
-          />
+    <section className="bg-[#ccdeeb] py-12 px-4" aria-labelledby="about-title">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        {/* Top heading and logo for small screens */}
+        <div className="flex items-center gap-4 mb-8 md:hidden">
+          <Link href="/" className="hover:opacity-80 transition">
+            <Image
+              src="/logofram.png"
+              alt="Logo"
+              width={200}
+              height={120}
+              className="object-contain"
+            />
+          </Link>
+          <h1
+            id="about-title"
+            className="text-2xl font-bold text-[#00121f]"
+          >
+            About us
+          </h1>
         </div>
 
-        {/* Right: Text Content */}
-        <div className="flex flex-col justify-between h-[500px]">
-          <div>
-            <h1 className="text-3xl font-bold text-[#00121f] mb-4">About us</h1>
+        <div className="grid md:grid-cols-2 gap-10 items-stretch">
+          {/* Left: Image */}
+          <div className="relative h-[500px] w-full rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/aboutimage.jpg"
+              alt="People using Elenii Shepherd app"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+
+          {/* Right: Text Content */}
+          <div className="flex flex-col justify-center h-full">
+            {/* Heading and logo for medium+ screens */}
+            <div className="hidden md:flex items-center gap-4 mb-4">
+              <Link href="/" className="hover:opacity-80 transition">
+                <Image
+                  src="/logofram.png"
+                  alt="Logo"
+                  width={60}
+                  height={50}
+                  className="object-contain"
+                />
+              </Link>
+              <h1
+                id="about-title"
+                className="text-3xl font-bold text-[#00121f]"
+              >
+                About us
+              </h1>
+            </div>
+
             <h2 className="text-2xl font-bold text-[#00121f] mb-4">
               Reimagining Independence Through Innovation
             </h2>
@@ -38,9 +76,6 @@ export default function AboutPage() {
               Driven by empathy. Built with purpose. Designed for independence. Join a
               growing community committed to redefining accessibility and digital freedom.
             </p>
-            <button className="bg-[#2A77AA] text-white px-6 py-3 w-full rounded-full font-semibold hover:bg-[#195b86] transition">
-              Contact us
-            </button>
           </div>
         </div>
       </div>
