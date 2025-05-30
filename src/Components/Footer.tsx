@@ -1,14 +1,16 @@
-import { FaTwitter, FaFacebookF } from "react-icons/fa";
+
+import { FaTwitter, FaFacebookF, FaGithub } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
-import { FaGithub } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#ccdeeb] text-white px-6 py-10">
+    <footer className="bg-[#ccdeeb] text-white px-4 py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
         {/* About Section */}
-        <div className="col-span-2">
-          <h1 className="text-xl font-bold mb-3 text-[#00121f]">About Elenii Shepherd</h1>
+        <div className="sm:col-span-2">
+          <h1 className="text-lg sm:text-xl font-bold mb-3 text-[#00121f]">
+            About Elenii Shepherd
+          </h1>
           <p className="text-sm leading-relaxed mb-4 text-gray-400">
             We believe accessibility is a right, not a luxury. Vision Helper empowers individuals with visual impairments
             by turning everyday smartphones into smart accessibility devices. Built with love, care, and collaboration with
