@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import { FaGooglePlay, FaApple } from "react-icons/fa";
 
@@ -8,8 +8,25 @@ export default function ContactPage() {
     <section className="bg-[#ccdeeb] flex flex-col items-center justify-center py-8 px-2 sm:px-4 lg:px-6">
       {/* Top Heading */}
       <div className="mb-6 text-center max-w-2xl">
+        <div className="flex items-center gap-4">
+          <Link href="/" className="hover:opacity-80 transition">
+            <Image
+              src="/logofram.png"
+              alt="Logo"
+              width={200}
+              height={120}
+              className="object-contain"
+            />
+          </Link>
+          <h1 className="text-lg sm:text-xl font-bold text-[#00121f] leading-none">
+            Elenii Shepherd
+          </h1>
+        </div>
+
         <h1 className="text-3xl font-bold mb-2 text-[#2A77AA]">CONTACT US</h1>
-        <p className="text-lg text-[#00121f] mb-1">We&rsquo;d love to hear from you.</p>
+        <p className="text-lg text-[#00121f] mb-1">
+          We&rsquo;d love to hear from you.
+        </p>
         <p className="text-gray-600">
           Whether you have a question, need support, or want to partner with us.
         </p>
@@ -33,7 +50,9 @@ export default function ContactPage() {
         <div className="flex justify-center items-center mt-8">
           <form className="w-full max-w-md h-full p-4 flex flex-col justify-between space-y-4">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Get in touch!</h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                Get in touch!
+              </h2>
               <p className="text-gray-600">
                 Fill out the form and we will contact you within 24 hours.
               </p>

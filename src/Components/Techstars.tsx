@@ -33,18 +33,22 @@ export default function Techstars() {
   return (
     <section className="bg-[#ccdeeb] text-[#00121f] py-10 px-4" aria-labelledby="features-title">
       {/* Logos */}
-      <div className="flex items-center justify-center flex-wrap gap-6">
-        {Array(4)
-          .fill(null)
-          .map((_, i) => (
-            <div key={i} className="flex items-center space-x-2">
-              <p className="text-xl">
-                techstars <span className="text-3xl text-green-300">_</span>
-              </p>
-              <Image src="/logo.png" alt="Techstars Logo" width={120} height={120} />
-            </div>
-          ))}
+     <div className="flex overflow-x-auto md:overflow-visible md:flex-wrap gap-6 items-center justify-start md:justify-center px-2 scroll-snap-x scroll-smooth">
+  {Array(3)
+    .fill(null)
+    .map((_, i) => (
+      <div
+        key={i}
+        className="flex items-center space-x-2 flex-shrink-0 scroll-snap-align-start"
+      >
+        <p className="text-xl">
+          techstars <span className="text-3xl text-green-300">_</span>
+        </p>
+        <Image src="/logo.png" alt="Techstars Logo" width={200} height={190} />
       </div>
+    ))}
+</div>
+
 
       {/* Section Title */}
       <div className="text-center mt-12 max-w-xl mx-auto">
@@ -59,46 +63,50 @@ export default function Techstars() {
 
       {/* Features Grid */}
       <div className="mt-10 max-w-7xl mx-auto space-y-8 px-4">
-        {/* Top Row */}
-        <div className="flex flex-wrap justify-center gap-4">
-          {renderCard(
-            "Real-Time Voice Guidance",
-            "Navigate spaces and apps with voice-assisted feedback in real time.",
-            "#aac9dd",
-            RiVoiceprintFill
-          )}
-          {renderCard(
-            "Screen Reader Integration",
-            "Works seamlessly with screen readers and voice control systems.",
-            "#5592bb",
-            MdCalculate
-          )}
-          {renderCard(
-            "Offline Smart Map",
-            "Navigate confidently—even without internet access.",
-            "#aac9dd",
-            MdOutlineSmartScreen
-          )}
-        </div>
+  {/* Top Row: 3 cards */}
+  <div className="flex flex-wrap justify-center gap-6">
+    {renderCard(
+      "Real-Time Voice Guidance",
+      "Navigate spaces and apps with voice-assisted feedback in real time.",
+      "#aac9dd",
+      RiVoiceprintFill,
+      "w-full sm:w-[300px] lg:w-[320px]"
+    )}
+    {renderCard(
+      "Screen Reader Integration",
+      "Works seamlessly with screen readers and voice control systems.",
+      "#5592bb",
+      MdCalculate,
+      "w-full sm:w-[300px] lg:w-[320px]"
+    )}
+    {renderCard(
+      "Offline Smart Map",
+      "Navigate confidently—even without internet access.",
+      "#aac9dd",
+      MdOutlineSmartScreen,
+      "w-full sm:w-[300px] lg:w-[320px]"
+    )}
+  </div>
 
-        {/* Bottom Row */}
-        <div className="flex flex-wrap justify-center gap-6">
-          {renderCard(
-            "Radio",
-            "Your data stays protected with built-in privacy and encryption.",
-            "#aac9dd",
-            IoIosRadio,
-            "w-full sm:w-[260px] lg:w-[500px]"
-          )}
-          {renderCard(
-            "News & Blog",
-            "Stay updated with automatic alerts and changes in real-time.",
-            "#5592bb",
-            LuNewspaper,
-            "w-full sm:w-[260px] lg:w-[500px]"
-          )}
-        </div>
-      </div>
+  {/* Bottom Row: 2 cards */}
+  <div className="flex flex-wrap justify-center gap-6">
+    {renderCard(
+      "Radio",
+      "Your data stays protected with built-in privacy and encryption.",
+      "#aac9dd",
+      IoIosRadio,
+      "w-full sm:w-[260px] lg:w-[500px]"
+    )}
+    {renderCard(
+      "News & Blog",
+      "Stay updated with automatic alerts and changes in real-time.",
+      "#5592bb",
+      LuNewspaper,
+      "w-full sm:w-[260px] lg:w-[500px]"
+    )}
+  </div>
+</div>
+
     </section>
   );
 }

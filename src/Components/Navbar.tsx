@@ -10,15 +10,17 @@ export default function Navbar() {
   return (
     <nav className="bg-[#80AECC] px-4 py-2 flex items-center justify-between relative z-50">
       {/* Logo and Brand Name */}
-      <div className="flex items-center">
-        <Image
-          src="/logofram.png"
-          alt="Logo"
-          width={80}
-          height={50}
-          className="object-contain"
-        />
-        <h1 className="text-2xl font-bold text-[#00121f] ml-2 leading-none">
+      <div className="flex items-center space-x-2">
+        <Link href="/">
+          <Image
+            src="/logofram.png"
+            alt="Logo"
+            width={200}
+            height={120}
+            className="object-contain"
+          />
+        </Link>
+        <h1 className="text-lg sm:text-xl font-bold text-[#00121f] leading-none">
           Elenii Shepherd
         </h1>
       </div>
@@ -62,17 +64,31 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full bg-[#80AECC] flex flex-col items-center space-y-4 py-6 transition-transform duration-300 ease-in-out ${
-          menuOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
+        className={`md:hidden absolute top-full left-0 w-full bg-[#80AECC] flex flex-col items-center space-y-4 py-6 transition-all duration-300 ease-in-out ${
+          menuOpen
+            ? "translate-y-0 opacity-100"
+            : "-translate-y-10 opacity-0 pointer-events-none"
         }`}
       >
-        <Link href="/features" className="hover:text-blue-600 text-lg" onClick={() => setMenuOpen(false)}>
+        <Link
+          href="/features"
+          className="hover:text-blue-600 text-lg"
+          onClick={() => setMenuOpen(false)}
+        >
           Features
         </Link>
-        <Link href="/how-it-works" className="hover:text-blue-600 text-lg" onClick={() => setMenuOpen(false)}>
+        <Link
+          href="/how-it-works"
+          className="hover:text-blue-600 text-lg"
+          onClick={() => setMenuOpen(false)}
+        >
           How it Works
         </Link>
-        <Link href="/about" className="hover:text-blue-600 text-lg" onClick={() => setMenuOpen(false)}>
+        <Link
+          href="/about"
+          className="hover:text-blue-600 text-lg"
+          onClick={() => setMenuOpen(false)}
+        >
           About
         </Link>
         <Link href="/contact" onClick={() => setMenuOpen(false)}>
