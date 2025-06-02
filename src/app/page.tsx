@@ -1,20 +1,23 @@
-
-import Navbar from "@/Components/Navbar"; 
-import LandingPage from "@/Components/LandingPage";
-import Techstars from "@/Components/Techstars";
-import HowItWork from "@/Components/HowItWork";
+import Navbar from "@/Components/Navbar";
+import {LandingPage} from "@/Components/LandingPage";
+import { Techstars } from "@/Components/Techstars";
+import { HowItWork } from "@/Components/HowItWork";
 import Testimonials from "@/Components/Testimonials";
-import Footer from "@/Components/Footer";
+import { Footer } from "@/Components/Footer";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
-      <Navbar /> 
-      <LandingPage /> 
-      <Techstars />
-      <HowItWork />
-      <Testimonials />
+    <main className="flex flex-col min-h-screen">
+      <Navbar />
+
+      <div className="flex-grow">
+        <LandingPage />
+        <Techstars />
+        <HowItWork />
+        <Testimonials />
+      </div>
+
       <Footer />
-    </div>
+    </main>
   );
 }
