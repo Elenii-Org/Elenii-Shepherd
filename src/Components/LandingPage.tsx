@@ -83,21 +83,21 @@ export default function LandingPage() {
           <div className="flex flex-col sm:flex-row items-center mt-6 justify-center sm:justify-start text-center sm:text-left">
             <div className="flex -space-x-3 mb-3 sm:mb-0">
               <Image
-                src="/user1.webp"
+                src="/User1.webp"
                 alt="User 1"
                 width={40}
                 height={40}
                 className="rounded-full border-2 border-white"
               />
               <Image
-                src="/user2.webp"
+                src="/User2.webp"
                 alt="User 2"
                 width={40}
                 height={40}
                 className="rounded-full border-2 border-white"
               />
               <Image
-                src="/user3.webp"
+                src="/User3.webp"
                 alt="User 3"
                 width={40}
                 height={40}
