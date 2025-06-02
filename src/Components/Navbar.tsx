@@ -20,9 +20,6 @@ export default function Navbar() {
             className="object-contain"
           />
         </Link>
-        <h1 className="text-lg sm:text-xl font-bold text-[#00121f] leading-none">
-          Elenii Shepherd
-        </h1>
       </div>
 
       {/* Hamburger Icon */}
