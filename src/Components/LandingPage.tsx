@@ -117,7 +117,7 @@ export default function LandingPage() {
             alt="Hero"
             width={500}
             height={500}
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full object-contain"
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use client";
+import Image from "next/image"; // ✅ Required for using <Image>
 import Link from "next/link";
-import Image from "next/image";
 import { FaGooglePlay, FaApple } from "react-icons/fa";
 
 export default function ContactPage() {
