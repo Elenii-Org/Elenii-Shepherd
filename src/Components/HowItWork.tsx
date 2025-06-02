@@ -28,7 +28,7 @@ export function HowItWork() {
           ))}
         </div>
         <div className="flex justify-center md:justify-end">
-          <Image src="/QRcode.png" alt="Download QR Code" width={200} height={200} className="rounded-md" />
+          <Image src="/QRcode.webp" alt="Download QR Code" width={200} height={200} className="rounded-md" />
         </div>
       </div>
     </section>
