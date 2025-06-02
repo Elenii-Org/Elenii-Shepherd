@@ -61,7 +61,7 @@ export default function LandingPage() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto justify-center lg:justify-start">
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-60 sm:w-auto justify-center lg:justify-start">
             <button
               onClick={handleDownloadClick}
               className="flex items-center justify-center gap-2 bg-[#2A77AA] text-white font-bold px-5 py-2.5 rounded-full hover:bg-blue-700 transition w-full sm:w-auto text-sm"
