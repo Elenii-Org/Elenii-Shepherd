@@ -28,7 +28,7 @@ export default function AboutPage() {
           {/* Left: Image */}
           <div className="relative h-[500px] w-full rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/aboutimage.jpg"
+              src="/aboutimage.webp"
               alt="People using Elenii Shepherd app"
               fill
               className="object-cover"

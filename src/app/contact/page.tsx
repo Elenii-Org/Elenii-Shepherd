@@ -38,7 +38,7 @@ export default function ContactPage() {
         <div className="flex justify-center items-center">
           <div className="w-full aspect-[4/3] sm:aspect-auto sm:h-full max-w-md relative rounded-lg shadow-md overflow-hidden">
             <Image
-              src="/contactimage.jpg"
+              src="/contactimage.webp"
               alt="Contact illustration"
               fill
               className="object-cover rounded-lg"

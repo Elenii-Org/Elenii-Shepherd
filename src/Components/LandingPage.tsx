@@ -8,7 +8,8 @@ export default function LandingPage() {
   const [showAccessibilityInfo, setShowAccessibilityInfo] = useState(false);
 
   const handleDownloadClick = () => {
-    // Placeholder for download logic
+    // Replace with actual logic
+    alert("Redirecting to app download options...");
   };
 
   const handleLearnMoreClick = () => {
@@ -60,57 +61,59 @@ export default function LandingPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+            {/* Combined Download Button */}
             <button
               onClick={handleDownloadClick}
-              className="flex items-center justify-center gap-2 sm:gap-3 bg-[#2A77AA] text-white font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full hover:bg-blue-700 transition w-full sm:w-auto"
+              className="flex items-center justify-center gap-3 bg-[#2A77AA] text-white font-bold px-5 py-2.5 rounded-full hover:bg-blue-700 transition w-full sm:w-auto"
             >
-              <FaGooglePlay size={24} />
-              <FaApple size={24} className="text-[#00121f]" />
-              <span className="text-sm sm:text-base text-[#00121f] font-bold">Download App</span>
+              <FaGooglePlay size={20} />
+              <FaApple size={20} />
+              <span>Download the App</span>
             </button>
 
+            {/* Learn More Button */}
             <button
               onClick={handleLearnMoreClick}
-              className="text-[#00121f] font-bold border border-[#2A77AA] px-5 sm:px-6 py-2.5 sm:py-3 rounded-full hover:bg-white transition w-full sm:w-auto"
+              className="text-[#00121f] font-bold border border-[#2A77AA] px-5 py-2.5 rounded-full hover:bg-white transition w-full sm:w-auto"
             >
               Learn More
             </button>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center mt-6 justify-center sm:justify-start text-center sm:text-left">
-  <div className="flex -space-x-3 mb-3 sm:mb-0">
-    <Image
-      src="/user1.png"
-      alt="User 1"
-      width={40}
-      height={40}
-      className="rounded-full border-2 border-white"
-    />
-    <Image
-      src="/user2.png"
-      alt="User 2"
-      width={40}
-      height={40}
-      className="rounded-full border-2 border-white"
-    />
-    <Image
-      src="/user3.png"
-      alt="User 3"
-      width={40}
-      height={40}
-      className="rounded-full border-2 border-white"
-    />
-  </div>
-  <p className="text-[#00121f] text-xs sm:text-sm font-medium sm:ml-6">
-    Trusted by thousands of users worldwide to <br /> improve daily living
-  </p>
-</div>
+            <div className="flex -space-x-3 mb-3 sm:mb-0">
+              <Image
+                src="/user1.webp"
+                alt="User 1"
+                width={40}
+                height={40}
+                className="rounded-full border-2 border-white"
+              />
+              <Image
+                src="/user2.webp"
+                alt="User 2"
+                width={40}
+                height={40}
+                className="rounded-full border-2 border-white"
+              />
+              <Image
+                src="/user3.webp"
+                alt="User 3"
+                width={40}
+                height={40}
+                className="rounded-full border-2 border-white"
+              />
+            </div>
+            <p className="text-[#00121f] text-xs sm:text-sm font-medium sm:ml-6">
+              Trusted by thousands of users worldwide to <br /> improve daily living
+            </p>
+          </div>
         </div>
 
         {/* Right Side */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
-            src="/image3.png"
+            src="/image3.webp"
             alt="Hero"
             width={500}
             height={500}
