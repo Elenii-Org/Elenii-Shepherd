@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="flex items-center space-x-2">
         <Link href="/">
           <Image
-            src="/logofram.png"
+            src="/logo.webp"
             alt="Logo"
             width={200}
             height={120}

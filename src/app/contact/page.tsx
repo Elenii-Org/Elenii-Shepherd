@@ -11,7 +11,7 @@ export default function ContactPage() {
         <div className="flex items-center gap-4">
           <Link href="/" className="hover:opacity-80 transition">
             <Image
-              src="/logofram.png"
+              src="/logo.webp"
               alt="Logo"
               width={200}
               height={120}
