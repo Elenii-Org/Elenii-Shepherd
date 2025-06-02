@@ -36,7 +36,7 @@ export function Techstars() {
             <p className="text-xl">
               techstars <span className="text-3xl text-green-300">_</span>
             </p>
-            <Image src="/logo.png" alt="Techstars Logo" width={200} height={190} />
+            <Image src="/logo.webp" alt="Techstars Logo" width={200} height={190} />
           </div>
         ))}
       </div>
