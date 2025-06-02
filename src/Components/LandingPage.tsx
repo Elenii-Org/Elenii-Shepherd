@@ -24,10 +24,9 @@ export default function LandingPage() {
 
   return (
     <div className="bg-[#80AECC] px-4 sm:px-6 lg:px-12 py-10">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 max-w-screen-xl mx-auto">
         {/* Left Content */}
-        <div className="lg:w-1/2 space-y-6 text-center lg:text-left w-full">
-          {/* Accessibility button */}
+        <div className="lg:w-1/2 w-full max-w-md sm:max-w-none space-y-5 sm:space-y-6 text-center lg:text-left">
           <button
             onClick={toggleAccessibilityInfo}
             className="bg-white text-[#2A77AA] px-4 py-2 rounded-full font-semibold text-sm sm:text-base"
@@ -37,11 +36,10 @@ export default function LandingPage() {
             ACCESSIBILITY SOLUTION
           </button>
 
-          {/* Toggle message */}
           {showAccessibilityInfo && (
             <div
               id="accessibility-info"
-              className="mt-4 p-4 bg-white text-[#00121f] rounded shadow text-sm sm:text-base"
+              className="mt-3 p-4 bg-white text-[#00121f] rounded shadow text-sm sm:text-base"
               role="region"
               aria-live="polite"
             >
@@ -61,7 +59,7 @@ export default function LandingPage() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-60 sm:w-auto justify-center lg:justify-start">
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto justify-center lg:justify-start">
             <button
               onClick={handleDownloadClick}
               className="flex items-center justify-center gap-2 bg-[#2A77AA] text-white font-bold px-5 py-2.5 rounded-full hover:bg-blue-700 transition w-full sm:w-auto text-sm"
@@ -118,7 +116,7 @@ export default function LandingPage() {
             alt="Hero"
             width={500}
             height={500}
-            className="w-full max-w-[300px] sm:max-w-sm md:max-w-md lg:max-w-lg object-contain"
+            className="w-[85%] max-w-[280px] sm:max-w-[340px] md:max-w-md lg:max-w-lg object-contain"
           />
         </div>
       </div>
